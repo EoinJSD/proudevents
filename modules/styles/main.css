@@ -18,8 +18,8 @@ body{
 }
 
 a.dublin{
-    text-decoration: none;
-    font-size: 16pt;
+text-decoration: none;
+    font-size: 26pt;
     font-family: forTheBears;
     color: #fff;
     padding: 0px;
@@ -30,35 +30,56 @@ a.dublin{
 
 header{
     width: 100vw;
-    background: linear-gradient(to bottom right, #4169E1, #00008B);
+    background: #262626;
+    /*background: linear-gradient(to bottom right, #4169E1, #00008B);*/
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav{
-    max-width: 70vw;
-    display: flex;
-    justify-content: space-between;
+    max-width: 80vw;
+    display: grid;
     margin: auto;
-    padding: 5px 0px;
+    padding: 0px;
     align-items: center;
 }
 
 nav ul{
     font-family: Dublin;
     font-size: 16pt;
-    width: 25vw;
+    width: 100%;
     margin: 0;
     list-style-type: none;
-	overflow: hidden;
-	padding: 0px;
+    overflow: hidden;
+    padding: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: wrap;
     align-items: center;
 }
 
+nav ul li{
+    display: flex;
+    transition: 0.2s;
+}
+
+nav ul li:hover{
+    background: #010101;
+}
+
 nav ul li a{
+    display: flex;
     text-decoration: none;
     color: #fff;
+    height: 5.5vh;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
 }
     
 
